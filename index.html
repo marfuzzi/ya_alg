@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [
+            { name: 'Настя', value: 6},
+            { name: 'Маша', value: 4},
+        ]
+        let obj = {};
+        arr.forEach(el => {
+            Object.assign(obj, {[el.name]: el.value});
+        })
+        console.log(obj);
+    </script>
+</body>
+</html>
